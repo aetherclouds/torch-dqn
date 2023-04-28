@@ -7,12 +7,11 @@ I have an RX480 8GB, so I had to follow [this guide](https://learn.microsoft.com
 - PyTorch 1.13
 - Python 3.9
 
-In a nutshell:
+In a nutshell (you don't have to run these -- just left it here for documentation):
 ```bash
 pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
 pip install torch-directml
 ```
-
 ### Virtual environment
 ```bash
 # for Windows AMD
@@ -24,4 +23,6 @@ pip install requirements-amd.txt
 python -m venv venv
 venv/Scripts/activate
 pip install requirements-no-torch.txt
+# make sure to install pytorch through wheel or otherwise
+pip install torch
 ```
