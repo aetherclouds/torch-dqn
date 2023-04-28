@@ -38,4 +38,17 @@ except ImportError:
 Transition = namedtuple('Transition', ('state', 'action', 'next_state', 'reward'))
 
 class ReplayMemory(object):
+    def __init__(self, capacity):
+        self.memory = deque([], maxlen=capacity)
+    
+    def push(self, *args):
+        self.memory.append(Transition(*args))
+
+    def sample(self, batch_sze)
+        return random.sample(self.memory, batch_sze)
+
+    def __len(self):
+        return len(self.memory)
+
+class DQN(nn.Model):
     # TODO
