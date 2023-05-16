@@ -360,10 +360,6 @@ def optimize_model():
     # Transpose the batch (see https://stackoverflow.com/a/19343/3343043 for
     # detailed explanation). This converts batch-array of Transitions
     # to Transition of batch-arrays.
-    print(*transitions[0], '')
-    print(transitions[0], '')
-    exit(0)
-    
     # create a single mega namedtuple with one key for various values, viz. state=StateTensor(...)
     batch = Transition(*zip(*transitions))
 
