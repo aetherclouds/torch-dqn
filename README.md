@@ -11,7 +11,7 @@ venv/Scripts/activate
 pip install requirements-py311.txt
 ```
 ## Running
-You may run the notebooks from your IDE, or from `jupyter lab .`
+You may run the notebooks from an IDE, or from `jupyter lab .`
 ## Note (AMD+Windows)
 > "After seeing those news, I can't find any benchmarks available, probably because no sane person (that understand the ML ecosystem) has a Windows PC with an AMD GPU." - [imp2](https://www.reddit.com/r/Amd/comments/qe4847/comment/hi2c4qf/?utm_source=share&utm_medium=web3x)
 
